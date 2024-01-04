@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Internship</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Info</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="./CV.pdf">CV</a></div>
+<div class="menu-category">Experience</div>
+<div class="menu-item"><a href="courses.html" class="current">Courses</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="internship.html">Internship</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="project.html">Projects</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Internship</h1>
+</div>
+<p><b> I did my internship in the <ahref="https://physinfo.fr/" target=&ldquo;blank&rdquo;>Quantum Circuit Group</a>, Lyon, France</b>, from July to October 2022. I had a chance to follow the experimental realization of superconducting circuits experiments from the design to the measurement, learn from the bests in the field and work with the most advanced FPGA waveform generators OPX from Quantum Machine.
+</p>
+<p>Here is the tasks I performed with some brief descriptions:<br />
+</p>
+<ul>
+<li><p><b>Simulation photon dissipation in the  Rotating Wave Approximation (RWA) of The Jaynes-Cumming model</b>:<br /><br />
+</p>
+<ul>
+<li><p>For this simulation, I mainly used the QuTip toolbox in Python.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Using the GRAPE algorithm to find the control pulses in a qubit-cavity system to reach an arbitrary fock state</b>:<br /><br />
+</p>
+<ul>
+<li><p>To ensure the control pulses would work in the experiment, I had to check the fidelity for the target state and the final state after implementing the control pulses considering dissipation, frequency filtering bond, and the delay due to the difference in wires&rsquo; length. Also, it's necessary to simulate high dimensional Hilbert space for the cavity so the high fock states won't get populated.
+For this simulation, I mainly used the QuTip toolbox in Python.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Finding the qubit-cavity system parameters</b>:<br /><br />
+</p>
+<ul>
+<li><p>To generate accurate control pulses, the system's parameters must be determined. The RWA of the system's hamiltonian only has a coupling part, so the final goal is to find the coupling constant. To determine the coupling constant, the readout resonator frequency, the cavity resonance frequency, and the transmon (qubit) frequency must be determined.
+I used QUA language and the OPX to run the experiments.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Find the translation between the simulation and the experiment</b>:<br /><br />
+</p>
+<ul>
+<li><p>A comparison of the displacement plots as a function of amplitude, from the experiment and the simulation, helped me find the right translation for storage pulses. Also, I calculated the translation for the qubit control pulses by using the Rabi frequency.
+</p>
+</li>
+</ul>
+  
+</li>
+</ul>
+<ul>
+<p><b>You can find a brief presentation of my work <a href="https://drive.google.com/file/d/1bJSy62C_KUoRZ7VM8UgGn69ux99IunTj/view?usp=sharing" target=&ldquo;blank&rdquo;>here</a>.<b>
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<p>
+<div class="roww"  style="margin:0 auto;">
+<img src="q1.png" style="width:40%">
+</div>
+
+</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2022-10-13 10:02:51 +0330, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+(<a href="internship.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
